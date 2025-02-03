@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Layout */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #d1e7dd;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header .user-actions a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e9f7ef;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d1e7dd;
+  }
+  
+
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .products {
+      flex-direction: column;
+    }
+  
+    .product {
+      margin-bottom: 1rem;
+    }
+  }
+  
